@@ -1,0 +1,90 @@
+@import url();
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Montserrat;
+    background: #d4c0ff;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav__item {
+    margin: 0 0px;
+}
+
+.nav__link {
+    display: flex;
+    font-weight: 500;
+    font-size: 24px;
+    color: #666;
+    position: relative;
+    padding: 0 5px;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.nav__link:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    width: 50%;
+    height: 2px;
+    background: #000;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav__link:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 50%;
+    height: 2px;
+    background: #000;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav__link:hover {
+    color: #000;
+}
+
+.nav__link:hover:before {
+    right: 0;
+}
+
+.nav__link:hover:after {
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
